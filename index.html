@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090817">
+<title>AÏS Kids — 3 Bedtime Stories to Learn English</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#fdf8ef;--muted:#aaa2b2;--gold:#ffd15a;--pink:#ff9dbb;--purple:#8d6edb;--bg:#090817;--panel:#111020}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Nunito,system-ui,sans-serif;background:
+radial-gradient(circle at 18% 0,#39265c 0,transparent 32%),
+radial-gradient(circle at 88% 18%,#352052 0,transparent 28%),
+linear-gradient(#090817,#0b0915 65%,#07070d)}
+a{text-decoration:none;color:inherit}
+.nav{height:76px;position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,5vw,76px);background:#090817cc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff14}
+.brand{font:1.55rem "DM Serif Display",serif;display:flex;gap:10px;align-items:center}.brand b{color:var(--gold)}
+.nav a:last-child{font-weight:900;color:#d9d1dd;font-size:.86rem}
+.hero{width:min(1180px,92%);margin:auto;display:grid;grid-template-columns:460px 1fr;gap:75px;align-items:center;padding:75px 0 45px}
+.cover{border-radius:28px;overflow:hidden;border:1px solid #ffd15a33;box-shadow:0 35px 90px #000a,0 0 70px #8d6edb18}.cover img{display:block;width:100%}
+.kicker{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--pink);font-weight:900}
+h1{font:400 clamp(3.4rem,6vw,5.8rem)/.92 "DM Serif Display",serif;margin:12px 0 18px}
+h1 span{color:var(--gold)}
+.lead{font-size:1.12rem;line-height:1.8;color:var(--muted);max-width:660px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0}.tag{padding:8px 12px;border-radius:999px;background:#ffffff08;border:1px solid #ffd15a25;color:#e9e0d5;font-size:.75rem;font-weight:900}
+.btns{display:flex;gap:10px;flex-wrap:wrap}.btn{padding:14px 20px;border-radius:999px;font-weight:900;border:1px solid #ffffff17;transition:.18s}.btn:hover{transform:translateY(-2px)}
+.gold{background:var(--gold);color:#241b08;box-shadow:0 10px 30px #ffd15a18}.dark{background:#ffffff09}
+.section{width:min(1080px,92%);margin:auto;padding:60px 0}.center{text-align:center}.section h2{font:400 clamp(2.4rem,4.5vw,3.7rem) "DM Serif Display",serif;margin:8px 0 12px}.sub{color:#928a9b;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}.card{background:#ffffff06;border:1px solid #ffffff12;border-radius:21px;padding:22px}.icon{font-size:1.5rem;margin-bottom:12px}.card strong{display:block;color:#ffe49a;margin-bottom:7px}.card p{color:#8e8795;font-size:.82rem;line-height:1.55;margin:0}
+
+.reading{width:min(1160px,94%);margin:30px auto 90px}.reading-head{text-align:center;margin-bottom:30px}.reading-head h2{font:400 clamp(2.5rem,5vw,4rem) "DM Serif Display",serif;margin:7px 0}.reading-head p{color:#938b9b}
+.ipad-wrap{display:flex;justify-content:center}
+.ipad{width:min(960px,100%);padding:17px;border-radius:43px;background:linear-gradient(145deg,#454653,#0e0f14 28%,#2e3038 80%,#090a0d);box-shadow:0 40px 100px #000b,0 0 0 2px #67687566,0 0 0 8px #050507;position:relative}
+.ipad:before{content:"";position:absolute;left:50%;top:6px;transform:translateX(-50%);width:72px;height:7px;border-radius:99px;background:#06070a}
+.ipad-screen{position:relative;border-radius:30px;overflow:hidden;background:#181722;border:2px solid #08090d;aspect-ratio:16/10}
+.reader{position:absolute;inset:0;display:flex;flex-direction:column;background:#111}
+.reader-top{height:52px;flex:none;background:#15141d;color:#d7d0da;display:flex;align-items:center;justify-content:space-between;padding:0 17px;font-size:.74rem;font-weight:800;border-bottom:1px solid #ffffff12}
+.reader-left{display:flex;align-items:center;gap:9px}.dot{width:8px;height:8px;background:#ffb7c9;border-radius:50%}
+.reader-stage{position:relative;flex:1;display:flex;align-items:center;justify-content:center;padding:22px;background:
+radial-gradient(circle at 50% 30%,#4a385d,#171624 55%,#0f0f17)}
+.book-page{height:100%;max-width:72%;aspect-ratio:3/4;background:white;border-radius:3px;box-shadow:0 16px 45px #0009;overflow:hidden;position:relative}
+.book-page iframe{width:100%;height:100%;border:0;background:white}
+.reader-bottom{height:47px;flex:none;background:#15141d;display:flex;align-items:center;justify-content:center;gap:15px;border-top:1px solid #ffffff12}
+.control{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#ffffff0a;color:#d8d2dc;font-size:.8rem}
+.pagecount{font-size:.7rem;color:#aaa2b1}
+.hint{text-align:center;color:#777080;font-size:.76rem;margin-top:18px}
+.reader-open{display:inline-block;margin-top:10px;color:#ffe49a;font-weight:900;font-size:.78rem}
+.ipad-home{position:absolute;right:50%;bottom:4px;transform:translateX(50%);width:8px;height:8px;border:1px solid #858691;border-radius:50%}
+
+.cta{width:min(820px,92%);margin:0 auto 100px;text-align:center;padding:44px 28px;border:1px solid #ffd15a22;border-radius:30px;background:#ffffff06}.cta h2{font:400 3rem "DM Serif Display",serif;margin:0 0 10px}.cta p{color:#9b94a2;line-height:1.7}
+footer{border-top:1px solid #ffffff12;text-align:center;padding:42px 20px;color:#6e6876;font-size:.78rem}footer strong{font:1.5rem "DM Serif Display",serif;color:#fff}
+
+@media(max-width:850px){.hero{grid-template-columns:1fr;gap:38px;padding-top:50px}.cover{max-width:560px;margin:auto}.cards{grid-template-columns:repeat(2,1fr)}.ipad{padding:10px;border-radius:28px}.ipad-screen{border-radius:20px}.book-page{max-width:78%}}
+@media(max-width:520px){h1{font-size:3.65rem}.cards{grid-template-columns:1fr}.ipad{padding:7px;border-radius:20px}.ipad-screen{border-radius:14px}.reader-top{height:37px;padding:0 9px;font-size:.58rem}.reader-bottom{height:34px}.reader-stage{padding:10px}.book-page{max-width:88%}.cta h2{font-size:2.4rem}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#"><b>✦</b> AÏS</a>
+  <a href="#preview">Read the Preview ↓</a>
+</nav>
+
+<section class="hero">
+  <div class="cover"><img src="3-bedtime-stories-cover.png" alt="3 Bedtime Stories to Learn English cover"></div>
+  <div>
+    <div class="kicker">AÏS Kids · English Learning</div>
+    <h1>3 Bedtime Stories<br><span>to Learn English</span></h1>
+    <p class="lead">Fun Adventures for Little Learners — a magical little collection where story time and English discovery meet.</p>
+    <div class="tags"><span class="tag">🌙 Bedtime</span><span class="tag">📖 3 Stories</span><span class="tag">🇬🇧 English Learning</span><span class="tag">🧒 Kids</span></div>
+    <div class="btns"><a class="btn gold" href="#preview">Read the Free Preview</a><a class="btn dark" href="3-bedtime-stories-preview.pdf">Open PDF</a></div>
+  </div>
+</section>
+
+<section class="section center">
+  <div class="kicker">Inside the book</div>
+  <h2>Made for little learners.</h2>
+  <p class="sub">A warm, colorful reading experience designed around the book itself.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🌙</div><strong>Bedtime adventures</strong><p>Three gentle stories for a cozy reading moment.</p></div>
+    <div class="card"><div class="icon">🇬🇧</div><strong>English discovery</strong><p>Meet English naturally through story time.</p></div>
+    <div class="card"><div class="icon">🎨</div><strong>Magical world</strong><p>Bright characters and a whimsical visual atmosphere.</p></div>
+    <div class="card"><div class="icon">✨</div><strong>Little learners</strong><p>A playful introduction to English reading.</p></div>
+  </div>
+</section>
+
+<section class="reading" id="preview">
+  <div class="reading-head">
+    <div class="kicker">Take a look inside</div>
+    <h2>Read it on the AÏS iPad.</h2>
+    <p>Flip through the preview right here — no plain PDF box, just the book in a cozy reading frame.</p>
+  </div>
+
+  <div class="ipad-wrap">
+    <div class="ipad">
+      <div class="ipad-screen">
+        <div class="reader">
+          <div class="reader-top">
+            <div class="reader-left"><span class="dot"></span> 3 Bedtime Stories to Learn English</div>
+            <div>Preview</div>
+          </div>
+          <div class="reader-stage">
+            <div class="book-page">
+              <iframe src="3-bedtime-stories-preview.pdf#page=1&view=FitH" title="Book preview"></iframe>
+            </div>
+          </div>
+          <div class="reader-bottom">
+            <span class="control">‹</span><span class="pagecount">Preview</span><span class="control">›</span>
+          </div>
+        </div>
+      </div>
+      <div class="ipad-home"></div>
+    </div>
+  </div>
+  <div class="hint">The preview is the actual uploaded PDF displayed inside the reader.</div>
+</section>
+
+<section class="cta">
+  <div class="kicker">AÏS Kids</div>
+  <h2>Ready for story time?</h2>
+  <p>Explore the book preview, then return to your AÏS collection when you're ready to discover more.</p>
+  <div class="btns" style="justify-content:center"><a class="btn gold" href="3-bedtime-stories-preview.pdf">Open Preview PDF</a></div>
+</section>
+
+<footer><strong>AÏS</strong><br><br>Digital Books · Stories · Ideas<br><br>© 2026 AÏS</footer>
+</body>
+</html>
